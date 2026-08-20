@@ -5,7 +5,11 @@ var player : Player
 var next_state : PlayerState
 
 #region /// state references
-# 这里是所有其他状态相关的参数
+@onready var idle: PlayerStateIdle = %Idle
+@onready var run: PlayerStateRun = %Run
+@onready var jump: PlayerStateJump = %Jump
+@onready var fall: PlayerStateFall = %Fall
+@onready var crouch: PlayerStateCrouch = %Crouch
 #endregion
 
 # 状态初始化时调用
